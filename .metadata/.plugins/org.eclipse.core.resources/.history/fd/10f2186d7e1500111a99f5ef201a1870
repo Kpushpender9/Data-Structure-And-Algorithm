@@ -1,0 +1,15 @@
+package recursion;
+
+public class SumOfNNaturalNumber {
+	
+	public static void main(String args[]) {
+		System.out.println(SumOfnNaturalNumber(5));
+	}
+	
+	public static int SumOfnNaturalNumber(int n){
+		if(n==1) 
+			return 1;
+		return SumOfnNaturalNumber(n-1)+SumOfnNaturalNumber(n);
+	}
+
+}
